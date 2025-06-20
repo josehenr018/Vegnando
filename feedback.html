@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Vegnando</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Página inicial</a></li>
+            <li><a href="quemsoueu.html">Quem sou eu?</a></li>
+            <li><a href="receitas.html">Receitas</a></li>
+            <li><a href="transformesuavida.html">Transforme sua vida</a></li>
+            <li><a href="mudancadehabitos.html">Mudança de Hábitos</a></li>
+            <li><a href="lojavirtual.html">Loja virtual</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+    <div class="feedback-form-container">
+        <h1>Sua Opinião é Importante!</h1>
+        <p>Agradecemos por dedicar um momento para nos dar seu feedback. Ele nos ajuda a melhorar!</p>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="nome">Nome (Opcional):</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome">
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail (Opcional, para contato se necessário):</label>
+                <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com">
+            </div>
+            <div class="form-group">
+                <label for="avaliacao">Como você avalia a experiência geral no site Vegnando?</label>
+                <select id="avaliacao" name="avaliacao" required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="excelente">Excelente</option>
+                    <option value="muito_bom">Muito Bom</option>
+                    <option value="bom">Bom</option>
+                    <option value="regular">Regular</option>
+                    <option value="ruim">Ruim</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Qual a sua seção favorita?</label>
+                <div class="radio-group">
+                    <input type="radio" id="receitas" name="secao_favorita" value="receitas">
+                    <label for="receitas">Receitas</label><br>
+                    <input type="radio" id="transforme_vida" name="secao_favorita" value="transforme_vida">
+                    <label for="transforme_vida">Transforme sua vida</label><br>
+                    <input type="radio" id="mudanca_habitos" name="secao_favorita" value="mudanca_habitos">
+                    <label for="mudanca_habitos">Mudança de Hábitos</label><br>
+                    <input type="radio" id="quem_somos" name="secao_favorita" value="quem_somos">
+                    <label for="quem_somos">Quem somos nós?</label><br>
+                    <input type="radio" id="outra_secao" name="secao_favorita" value="outra">
+                    <label for="outra_secao">Outra (especifique abaixo)</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="pontos_fortes">Quais pontos você considera mais fortes no site?</label>
+                <textarea id="pontos_fortes" name="pontos_fortes" rows="4" placeholder="Ex: Receitas claras, design bonito, informações úteis."></textarea>
+            </div>
+            <div class="form-group">
+                <label for="melhorias">O que podemos melhorar no site?</label>
+                <textarea id="melhorias" name="melhorias" rows="4" placeholder="Ex: Mais categorias de receitas, ferramenta de busca, vídeos."></textarea>
+            </div>
+            <div class="form-group">
+                <label>Você recomendaria o Vegnando para um amigo?</label>
+                <div class="radio-group">
+                    <input type="radio" id="sim_recomendar" name="recomendar" value="sim" required>
+                    <label for="sim_recomendar">Sim</label>
+                    <input type="radio" id="nao_recomendar" name="recomendar" value="nao">
+                    <label for="nao_recomendar">Não</label>
+                    <input type="radio" id="talvez_recomendar" name="recomendar" value="talvez">
+                    <label for="talvez_recomendar">Talvez</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="sugestoes_gerais">Outras sugestões ou comentários:</label>
+                <textarea id="sugestoes_gerais" name="sugestoes_gerais" rows="4" placeholder="Compartilhe qualquer outra ideia ou feedback que tiver."></textarea>
+            </div>
+            <button type="submit">Enviar Feedback</button>
+        </form>
+    </div>
+</body>
+</html>

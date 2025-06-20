@@ -93,11 +93,18 @@ nav a:hover {
     background: #fcfae2;
     border-radius: 8px;
     box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #2d3a2d;
     letter-spacing: 0.02em;
 }
 
 .container:first-of-type {
-    margin-top: 60px;
+    margin-top: 120px;
+}
+
+body > h1 + .container {
+    margin-top: 20px;
 }
 
 .content-flex {
@@ -135,6 +142,33 @@ nav a:hover {
     color: #333;
 }
 
+.receita-conteudo {
+    margin-bottom: 30px;
+}
+
+.receita-conteudo ul,
+.receita-conteudo ol {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.receita-conteudo li {
+    margin-bottom: 8px;
+}
+
+.receita-conteudo .dicas {
+    background-color: #f0f8f0;
+    border-left: 5px solid #47924a;
+    padding: 15px;
+    margin-top: 25px;
+    border-radius: 4px;
+}
+
+.receita-conteudo .dicas h3 {
+    color: #47924a;
+    margin-top: 0;
+}
+
 .receita {
     display: flex;
     flex-wrap: wrap;
@@ -167,37 +201,14 @@ nav a:hover {
     min-width: 300px;
 }
 
-.receita-conteudo ul,
-.receita-conteudo ol {
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
-
-.receita-conteudo li {
-    margin-bottom: 8px;
-}
-
-.receita-conteudo .dicas {
-    background-color: #f0f8f0;
-    border-left: 5px solid #47924a;
-    padding: 15px;
-    margin-top: 25px;
-    border-radius: 4px;
-}
-
-.receita-conteudo .dicas h3 {
-    color: #47924a;
-    margin-top: 0;
-}
-
 #conteudo-principal {
-    margin-top: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: calc(100vh - 120px);
     padding: 20px;
     box-sizing: border-box;
+    margin-top: 80px;
 }
 
 .cartao {
@@ -295,6 +306,7 @@ nav a:hover {
     background: #fcfae2;
     border-radius: 8px;
     box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
     color: #2d3a2d;
 }
 
@@ -466,10 +478,17 @@ nav a:hover {
     nav ul {
         flex-direction: column;
         align-items: center;
+        max-height: 200px;
+        overflow-y: auto;
     }
 
     nav ul li {
         margin: 5px 0;
+    }
+
+    nav a {
+        padding: 8px 15px;
+        font-size: 0.95em;
     }
 
     .container {
@@ -514,6 +533,9 @@ nav a:hover {
         max-width: 100%;
         height: 200px;
     }
+    #conteudo-principal {
+        margin-top: 80px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -521,8 +543,11 @@ nav a:hover {
         font-size: 1.5em;
     }
     nav a {
-        padding: 10px 15px;
-        font-size: 1em;
+        padding: 6px 10px;
+        font-size: 0.9em;
+    }
+    nav ul {
+        max-height: 150px;
     }
     .container {
         padding: 15px;
